@@ -1,4 +1,4 @@
-const generateMessage=(username,text)=>{
+const generateMessage = (username, text, cipher) => {
     return {
         username,
         text,
@@ -7,15 +7,15 @@ const generateMessage=(username,text)=>{
     }
 }
 
-const generateLocationMessage=(username,url)=>{
-    return{
+const generateLocationMessage = (username, url) => {
+    return {
         username,
         url,
         createdAt: new Date().getTime()
     }
 }
 
-module.exports={
+module.exports = {
     generateMessage,
     generateLocationMessage
 }
